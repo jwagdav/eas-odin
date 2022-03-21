@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+#container{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 960px;
+}
+
+.grid{
+    border: 1px solid black;
+    display: flex; 
+    flex: 1;
+    flex-wrap: wrap;
+
+}
