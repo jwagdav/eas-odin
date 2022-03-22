@@ -1,19 +1,24 @@
+:root {
+    --grid-size: 1;
+}
+
 * {
     box-sizing: border-box;
 }
 
-#container{
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    height: 100vh;
-    width: 960px;
+body{
+    height: 100%;
 }
 
-.grid{
-    border: 1px solid black;
-    display: flex; 
-    flex: 1;
-    flex-wrap: wrap;
+#container{
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size), 1fr);
+    grid-template-rows: repeat(var(--grid-size), 1fr);
+    height: 95vh;
+    width: 960px;
+    
+}
 
+.grid-items{
+    border: 1px solid black;
 }
