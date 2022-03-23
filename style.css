@@ -8,6 +8,8 @@
 
 body{
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #container{
@@ -16,7 +18,6 @@ body{
     grid-template-rows: repeat(var(--grid-size), 1fr);
     height: 95vh;
     width: 960px;
-    
 }
 
 .grid-items{
