@@ -1,3 +1,18 @@
+const btn = document.querySelector('#btn');
+btn.addEventListener('click', () => {
+    const div = document.querySelector('#container');
+
+    div.innerHTML = '';
+
+    let grid = window.prompt("Enter grid size");
+    if(grid > 100){
+        alert("Sorry, we can't do a grid that big");
+    } else {
+        createGrid(grid);
+    }
+
+});
+
 function createGrid(x){
 
     const container = document.querySelector('#container');
@@ -31,5 +46,7 @@ function makeRGB(){
     return newRGB;
 }
 
-createGrid(4);
+
+
+createGrid(16);
 
